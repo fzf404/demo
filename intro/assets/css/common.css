@@ -44,6 +44,9 @@ a {
   max-width: 100px;
 }
 
+span {
+  display: inline-block;
+}
 
 /* 伪元素 */
 a:after {
@@ -67,8 +70,12 @@ a:hover:after {
   top: 0%;
 }
 
-span {
-  display: inline-block;
+#load {
+  display: none;
+}
+
+#back {
+  float: right;
 }
 
 /* 移动端优化 */
