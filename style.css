@@ -6,13 +6,10 @@ body {
 h1 {
   /* 文字大小 */
   font-size    : 3em;
-  /* 底边距 */
-  margin-bottom: .8em;
 }
 
 h2 {
   font-size    : 2em;
-  margin-bottom: 1.4em;
 }
 
 p {
