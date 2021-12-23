@@ -1,0 +1,44 @@
+<!--
+ * @Author: fzf404
+ * @Date: 2021-11-11 16:43:24
+ * @LastEditTime: 2021-11-25 21:31:16
+ * @Description: PWA-DEMO
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="logo.png" type="image/png" />
+
+    <title>fzf404 | PWA</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>你好呀 👋</h1>
+
+    <h2>This is a PWA example ⏱</h2>
+
+    <p>在浏览器地址栏右上，点击添加为应用</p>
+
+    <p>接下来就可以离线查看本网页啦 </p>
+    <p>
+      <a class="fr" id="status">网络已连接</a>
+    </p>
+    <script>
+      if (navigator.serviceWorker != null) {
+        navigator.serviceWorker.register('sw.js').then((reg) => {
+          console.log('Registered events at scope: ', reg.scope)
+        })
+      }
+
+      const status = document.querySelector('#status')
+      if (!navigator.onLine) {
+        status.innerText = '网络未连接'
+      }
+    </script>
+  </body>
+</html>
