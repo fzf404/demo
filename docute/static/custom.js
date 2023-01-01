@@ -43,6 +43,6 @@ fetch('./static/custom.json')
       },
       nav: nav,
       sidebar: [...sidebar],
-      footer: `Build by <a href="https://fzf404.art">fzf404 <ExternalLinkIcon /> </a>, Power by <a href="https://github.com/egoist/docute">docute <ExternalLinkIcon /> </a>`,
+      footer: `Build by <a href="https://www.fzf404.art/">fzf404 <ExternalLinkIcon /> </a>, Power by <a href="https://github.com/egoist/docute">docute <ExternalLinkIcon /> </a>`,
     })
   })
