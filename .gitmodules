@@ -1,0 +1,12 @@
+[submodule "docute"]
+	path = docute
+	url = https://github.com/fzf404/Docute
+
+[submodule "favor"]
+	path = favor
+	url = https://github.com/fzf404/favor
+	branch = gh-pages
+
+[submodule "intro"]
+	path = intro
+	url = https://github.com/fzf404/intro
